@@ -5,7 +5,7 @@
 
 body {
     background-color: #243642;
-    margin: 10px 60px 0 60px;
+    margin: 10px 60px 0px 60px;
     display: flex;
     flex-direction: column;
 }
@@ -132,6 +132,10 @@ nav .nav-btn a:hover {
 } 
 
 @media (max-width: 680px) {
+    body {
+        margin: 5px 20px 0px 20px;
+    }
+
     h2 {
         font-size: 22px;
         text-align: center;
@@ -141,7 +145,7 @@ nav .nav-btn a:hover {
         font-size: 14px;
         text-align: center;
     }
-
+    
     .part {
         width: 100%;
         display: block;
@@ -153,5 +157,15 @@ nav .nav-btn a:hover {
         width: 100%;
         display: inline;
         object-fit: cover;
+    }
+
+    nav {
+        display: block;
+        height: 50px;
+    }
+
+    nav .nav-btn a {
+        font-size: 20px;
+        margin: 10px 0px 0px 20px;
     }
 }
