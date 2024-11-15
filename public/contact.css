@@ -72,3 +72,43 @@ body {
     width: 70%;
     margin-top: 15px;
 }
+
+@media (max-width: 680px) {
+    .page nav {
+        display: block;
+        height: 60px;
+    }
+
+    .page .container .title {
+        color: #DDDDDD;
+        font-size: 1.5rem;
+        margin-top: 20px;
+        margin-left: 3px;
+    }
+    
+    .page .container .nav-btn a {
+        color: #DDDDDD;
+        font-size: 20px;
+        font-weight: 200px;
+        text-transform: capitalize;
+        margin-left: 3px;
+        margin-right: 10px;
+    }
+
+    .page .contact {
+        display: block;
+    }
+
+    .page .contact .intro {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .page .contact .paragraph {
+        font-size: 15px;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+}
