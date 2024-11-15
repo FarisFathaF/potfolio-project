@@ -119,12 +119,15 @@ body {
 
 @media (max-width: 680px) {
     .page nav {
-        height: 100px;
+        display: block;
+        height: 60px;
     }
 
     .page .container .title {
         color: #DDDDDD;
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin-top: 20px;
+        margin-left: 3px;
     }
     
     .page .container .nav-btn a {
@@ -132,8 +135,12 @@ body {
         font-size: 20px;
         font-weight: 200px;
         text-transform: capitalize;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 3px;
+        margin-right: 10px;
+    }
+
+    .page .home {
+        display: block;
     }
 
     .page .home .text {
@@ -142,35 +149,46 @@ body {
 
     .page .home .text h4 {
         letter-spacing: 1px;
-        font-size: 25px;
-        margin-top: 45px;
+        font-size: 20px;
+        margin-top: 25px;
     }
     
     .page .home .text h2 {
         letter-spacing: 1px;
-        font-size: 40px;
-        margin: 10px 0px 10px;
+        font-size: 30px;
+        margin: 5px 0px 5px;
     }
     
     .page .home .text h3 {
         color: #F05454;
-        font-size: 25px;
+        font-size: 20px;
     }
     
     .page .home .text .socials {
         display: inline-block;
-        margin: 10px 0px 20px 0px;
+        margin: 5px 0px 20px 0px;
+    }
+
+    .page .home .text .socials a i {
+        color: #F05454;
+        background-color: #222831;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #F05454;
+        text-align: center;
+        line-height: 40px; /*agar text pas di tengah kotak/border*/
+        border-radius: 30%;
     }
 
     .page .home .photo {
-        width: 60%;
+        width: 50%;
+        margin: 0px 10px 10px 90px;
     }
 
     .page .home .photo img {
         width: 100%;
         margin: 0%;
     }
-
 }
 /*--------PLACEHOLDER--------*/
 /* .page .container .nav-box {
