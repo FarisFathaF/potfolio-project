@@ -1,9 +1,13 @@
+* {
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
 body {
     background-color: #243642;
     margin: 10px 60px 0 60px;
     display: flex;
     flex-direction: column;
-
 }
 
 .line {
@@ -33,7 +37,6 @@ body {
 }
 
 .part {
-    flex: 1;
     width: 25%;
 }
 
@@ -88,19 +91,14 @@ h3  {
     background-color: #629584;
 }
 
-.buttons  {
-    margin-left: 2%;
-    text-transform: uppercase;
-    font-family: "Rubik", serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #E2F1E7;
-}
-
 .poster-sizing {
     box-shadow: 0px 0px 15px 5px #387478;
     height: 550px;
 }
+
+img:hover {
+    box-shadow: 0px 0px 15px 15px #387478;
+} /*glowing effects for when users hover the images*/
 
 .paragraph-layout {
     margin-bottom: 40px;
@@ -111,6 +109,27 @@ h3  {
     font-style: normal;
     color: #F3F3E0;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+nav .nav-btn a {
+    color: #F3F3E0;
+    text-transform: uppercase;
+    font-family: "Rubik", serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-right: 60px;
+}
+
+nav .nav-btn a:hover {
+    color: #387478;
+} 
 
 @media (max-width: 680px) {
     h2 {

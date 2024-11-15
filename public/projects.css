@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+body {
+    background-color: #222831;
+}
+
+.page nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+
+.page .container {
+    width: 95%;
+    margin: auto;
+}
+
+.page .container .title {
+    color: #DDDDDD;
+    font-size: 2.5rem;
+}
+
+.page .container .title span {
+    color: #F05454;
+}
+
+.page .container .nav-btn a {
+    color: #DDDDDD;
+    font-size: 1.5rem;
+    font-weight: 200px;
+    text-transform: capitalize;
+    margin-left: 40px;
+    margin-right: 60px;
+}
+
+.page .container .nav-btn a:hover, .page .container .nav-btn a.current {
+    color: #F05454;
+}
+
+.page .container .nav-btn a:active {
+    color: #EB8317;
+}
+
+.page .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.intro {
+    flex: 1;
+    width: 70%;
+}
+
+.main-content-1 {
+    flex: 1;
+}
+
+.part {
+    width: 29%;
+    margin-top: 25px;
+}
+
+.left {
+    float: left;
+    margin-right: 8%;
+}
+
+.middle {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.page .projects .intro {
+    color: #DDDDDD;
+    font-size: 20px;
+    width: 70%;
+    margin-top: 7%;
+}
+
+.page .projects h3 {
+        color: #DDDDDD;
+        font-size: 25px;
+        text-align: center;
+}
+
+.page .projects h3:hover {
+    color: #F05454;
+    font-size: 27px;
+}
+
+.proj-preview {
+    width: 100%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+.page .projects .main-content-1 a img:hover {
+    background-color: #F05454;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0px 0px 10px 5px #F05454;
+}
+
+
+
+
+
+
+
+/*--------PLACEHOLDER--------*/
+/* .page .container .nav-box {
+    background-color: #222831;
+    border: 2px solid #F05454;
+    border-radius: 15%;
+    line-height: 45px;
+} if i want to enable box around the nav buttons
+*/

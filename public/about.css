@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+body {
+    background-color: #222831;
+}
+
+.page nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+
+.page .container {
+    width: 95%;
+    margin: auto;
+}
+
+.page .container .title {
+    color: #DDDDDD;
+    font-size: 2.5rem;
+}
+
+.page .container .title span {
+    color: #F05454;
+}
+
+.page .container .nav-btn a {
+    color: #DDDDDD;
+    font-size: 1.5rem;
+    font-weight: 200px;
+    text-transform: capitalize;
+    margin-left: 40px;
+    margin-right: 60px;
+}
+
+.page .container .nav-btn a:hover, .page .container .nav-btn a.current {
+    color: #F05454;
+}
+
+.page .container .nav-btn a:active {
+    color: #EB8317;
+}
+
+.page .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.intro {
+    flex: 1;
+    width: 70%;
+}
+
+.page .about .intro {
+    color: #DDDDDD;
+    font-size: 25px;
+    width: 70%;
+    margin-top: 7%;
+}
+
+.page .about .paragraph {
+    color: #DDDDDD;
+    font-size: 25px;
+    width: 70%;
+    margin-top: 15px;
+}
