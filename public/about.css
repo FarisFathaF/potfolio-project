@@ -50,28 +50,118 @@ body {
 
 .page .about {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    margin-top: 10%;
 }
 
-.intro {
-    flex: 1;
-    width: 70%;
+.page .about .photo {
+    width: 40%;
+    height: 20%;
 }
 
-.page .about .intro {
+.page .about .photo a img {
+    width: 100%;
+    border: 2px solid #F05454;
+    object-fit: contain;
+    border-radius: 10%;
+}
+
+.page .about .content-1 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; jika ingin spacing antara div dlm flexbox content-1 ini maka uncomment this line*/
+    margin-left: 3.5%;
+}
+
+.page .about .title-1 {
     color: #DDDDDD;
-    font-size: 25px;
-    width: 70%;
-    margin-top: 7%;
+    font-size: 35px;
 }
 
 .page .about .paragraph {
+    width: 90%;
     color: #DDDDDD;
     font-size: 25px;
-    width: 70%;
-    margin-top: 15px;
+    text-align: justify;
+    margin-top: 20px;
 }
+
+.page .hobbies {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+    margin-bottom: 60px;
+}
+
+.page .hobbies .hobbies-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.part {
+    width: 25%;
+    background-color: #F05454;
+    margin-right: 2px;
+}
+
+.part:hover {
+    outline: 1px solid #DDDDDD;
+    box-shadow: 0px 0px 15px #F05454;
+}
+
+.page .hobbies .hobbies-box .title-2 {
+    height: 200px;
+    background-color: #30475E;
+    border-radius: 5% 0% 0% 5%;
+}
+
+.page .hobbies .hobbies-box .title-2 h2 {
+    color: #F05454;
+    font-size: 50px;
+    text-align: center;
+    margin: 80px 20px 80px 20px;
+}
+
+.page .hobbies .hobbies-box .part-title {
+    color: #DDDDDD;
+    text-transform: capitalize;
+    font-size: 22px;
+    height: 25px;
+    margin-left: 219px;
+    margin-top: 26px;
+}
+
+.page .hobbies .hobbies-box img {
+    width: 200px;
+    height: 180px;
+    float: left;
+    margin: 8px 5px 5px 5px;
+    object-fit: contain;
+    border-radius: 25%;
+}
+
+.page .hobbies .hobbies-box p {
+    padding: 10px 10px 15px 10px;
+    text-align: justify;
+    font-weight: 600;
+    margin-left: 211px;
+    margin-right: 0px;
+}
+
+.left {
+    float: left;
+}
+
+.middle {
+    float: left;
+}
+
+.right {
+    float: right;
+    border-radius: 0% 5% 5% 0%;
+}
+
 
 @media (max-width: 680px) {
     .page nav {
