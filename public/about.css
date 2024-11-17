@@ -262,16 +262,22 @@ body {
 }
 
 @media (max-width: 405px) {
+    .page .hobbies .hobbies-box img {
+        width: 170px;
+        border-radius: 30%;
+    }
+
     .page .hobbies .hobbies-box .part-title {
-        font-size: 16.5px;
+        font-size: 13.5px;
         height: 25px;
-        margin-left: 220px;
-        margin-top: 26px;
+        margin-left: 190px;
+        margin-top: 40px;
     }
 
     .page .hobbies .hobbies-box p {
         padding: 0px 5px 0px 10px;
         text-align: left;
-        font-size: 13px;
+        margin-left: 180px;
+        font-size: 12px;
     }
 }
