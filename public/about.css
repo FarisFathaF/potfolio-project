@@ -106,13 +106,14 @@ body {
 
 .part {
     width: 25%;
-    background-color: #F05454;
+    background-color: rgb(240,84,84,0.8);
     margin-right: 2px;
 }
 
 .part:hover {
     outline: 1px solid #DDDDDD;
     box-shadow: 0px 0px 15px #F05454;
+    background-color: #F05454;
 }
 
 .page .hobbies .hobbies-box .title-2 {
@@ -181,6 +182,10 @@ body {
         margin-left: 3px;
     }
     
+    .page .container .nav-btn {
+        margin-top: 15px;
+    }
+
     .page .container .nav-btn a {
         color: #DDDDDD;
         font-size: 20px;
@@ -194,15 +199,53 @@ body {
         display: block;
     }
 
-    .page .about .intro {
-        font-size: 15px;
-        width: 100%;
+    .page .about .content-1 {
+        /* justify-content: space-between; jika ingin spacing antara div dlm flexbox content-1 ini maka uncomment this line*/
+        margin: 2% 1.5% 0% 1.5%;
     }
-    
+
+    .page .about .title-1 {
+        color: #DDDDDD;
+        font-size: 22.5px;
+    }
+
     .page .about .paragraph {
         font-size: 15px;
         justify-content: center;
         width: 100%;
         margin-top: 10px;
+    }
+
+    .page .hobbies .hobbies-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .part {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .page .hobbies .hobbies-box .title-2 {
+        height: 50px;
+        border-radius: 15% 15% 0% 0%;
+    }
+    
+    .page .hobbies .hobbies-box .title-2 h2 {
+        color: #F05454;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .page .hobbies .hobbies-box p {
+        padding: 0px 5px 0px 10px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .right {
+        float: right;
+        border-radius: 0% 0% 7% 7%;
     }
 }

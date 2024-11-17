@@ -61,6 +61,7 @@ body {
 
 .main-content-1 {
     flex: 1;
+    margin-top: 20px;
 }
 
 .part {
@@ -83,9 +84,9 @@ body {
 
 .page .projects .intro {
     color: #DDDDDD;
-    font-size: 20px;
+    font-size: 25px;
     width: 70%;
-    margin-top: 7%;
+    margin-top: 7.5%;
 }
 
 .page .projects h3 {
@@ -126,6 +127,10 @@ body {
         margin-left: 3px;
     }
     
+    .page .container .nav-btn {
+        margin-top: 15px;
+    }
+
     .page .container .nav-btn a {
         color: #DDDDDD;
         font-size: 20px;
@@ -141,20 +146,30 @@ body {
 
     .part {
         width: 100%;
-        margin-top: 25px;
+        margin-top: 0px;
+        margin-bottom: 15px;
     }
 
     .page .projects .intro {
         color: #DDDDDD;
-        font-size: 12px;
+        font-size: 15px;
         width: 100%;
-        margin-top: 7%;
+        margin-top: 9%;
+    }
+
+    .main-content-1 {
+        margin-top: 20px;
     }
 
     .page .projects h3 {
         color: #DDDDDD;
-        font-size: 15px;
+        font-size: 20px;
         text-align: left;
+    }
+
+    .page .projects h3:hover {
+        color: #F05454;
+        font-size: 20px;
     }
 
     .proj-preview {
