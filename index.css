@@ -154,7 +154,7 @@ body {
     .page .home .text h4 {
         letter-spacing: 1px;
         font-size: 25px;
-        margin-top: 40px;
+        margin-top: 55px;
     }
     
     .page .home .text h2 {
@@ -205,7 +205,7 @@ body {
 @media (max-width: 405px) {
     .page .home .text h2 {
         letter-spacing: 1px;
-        font-size: 36px;
+        font-size: 33px;
         margin: 5px 0px 5px;
     }
 }
