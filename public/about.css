@@ -118,8 +118,12 @@ body {
 
 .page .hobbies .hobbies-box .title-2 {
     height: 200px;
-    background-color: #30475E;
+    background-color: rgb(48,71,94,0.6);
     border-radius: 5% 0% 0% 5%;
+}
+
+.page .hobbies .hobbies-box .title-2:hover {
+    background-color: rgb(48,71,94);
 }
 
 .page .hobbies .hobbies-box .title-2 h2 {

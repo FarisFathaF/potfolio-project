@@ -94,6 +94,7 @@ h3  {
 .poster-sizing {
     box-shadow: 0px 0px 15px 5px #387478;
     height: 550px;
+    border-radius: 10%;
 }
 
 img:hover {
