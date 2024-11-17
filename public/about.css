@@ -260,3 +260,18 @@ body {
         border-radius: 0% 0% 7% 7%;
     }
 }
+
+@media (max-width: 405px) {
+    .page .hobbies .hobbies-box .part-title {
+        font-size: 16.5px;
+        height: 25px;
+        margin-left: 220px;
+        margin-top: 26px;
+    }
+
+    .page .hobbies .hobbies-box p {
+        padding: 0px 5px 0px 10px;
+        text-align: left;
+        font-size: 13px;
+    }
+}
