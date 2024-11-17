@@ -153,19 +153,19 @@ body {
 
     .page .home .text h4 {
         letter-spacing: 1px;
-        font-size: 25px;
+        font-size: 20px;
         margin-top: 55px;
     }
-    
+
     .page .home .text h2 {
         letter-spacing: 1px;
-        font-size: 40px;
+        font-size: 30px;
         margin: 5px 0px 5px;
     }
     
     .page .home .text h3 {
         color: #F05454;
-        font-size: 25px;
+        font-size: 22px;
     }
     
     .page .home .text .socials {
@@ -202,24 +202,6 @@ body {
     }
 }
 
-@media (max-width: 340px) {
-    .page .home .text h4 {
-        letter-spacing: 1px;
-        font-size: 20px;
-        margin-top: 55px;
-    }
-
-    .page .home .text h2 {
-        letter-spacing: 1px;
-        font-size: 30px;
-        margin: 5px 0px 5px;
-    }
-    
-    .page .home .text h3 {
-        color: #F05454;
-        font-size: 22px;
-    }
-}
 
 
 /*--------PLACEHOLDER--------*/
