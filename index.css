@@ -201,6 +201,15 @@ body {
         box-shadow: 0px 0px 20px #F05454;
     }
 }
+
+@media (max-width: 405px) {
+    .page .home .text h2 {
+        letter-spacing: 1px;
+        font-size: 36px;
+        margin: 5px 0px 5px;
+    }
+}
+
 /*--------PLACEHOLDER--------*/
 /* .page .container .nav-box {
     background-color: #222831;
