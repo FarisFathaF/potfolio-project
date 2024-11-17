@@ -202,13 +202,14 @@ body {
     }
 }
 
-@media (max-width: 405px) {
+@media (max-width: 360px) {
     .page .home .text h2 {
         letter-spacing: 1px;
         font-size: 33px;
         margin: 5px 0px 5px;
     }
 }
+
 
 /*--------PLACEHOLDER--------*/
 /* .page .container .nav-box {
