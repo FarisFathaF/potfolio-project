@@ -187,12 +187,12 @@ body {
     }
     
     .page .container .nav-btn {
-        margin-top: 5px;  /*--before the new certif button this used to be 15px--*/
+        margin-top: 15px;  /*--before the new certif button this used to be 15px--*/
     }
 
     .page .container .nav-btn a {
         color: #DDDDDD;
-        font-size: 0.6rem;    /*--before the new certif button this used to 20px--*/
+        font-size: 20px;    /*--before the new certif button this used to 20px--*/
         font-weight: 200px;
         text-transform: capitalize;
         margin-left: 3px;
@@ -262,6 +262,19 @@ body {
 }
 
 @media (max-width: 405px) {
+    .page .container .nav-btn {
+        margin-top: 5px;  /*--before the new certif button this used to be 15px--*/
+    }
+
+    .page .container .nav-btn a {
+        color: #DDDDDD;
+        font-size: 0.6rem;    /*--before the new certif button this used to 20px--*/
+        font-weight: 200px;
+        text-transform: capitalize;
+        margin-left: 3px;
+        margin-right: 10px;
+    }
+
     .page .hobbies .hobbies-box img {
         width: 170px;
         border-radius: 30%;
