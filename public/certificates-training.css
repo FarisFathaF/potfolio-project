@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+body {
+    background-color: #222831;
+}
+
+.page nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+
+.page .container {
+    width: 95%;
+    margin: auto;
+}
+
+.page .container .title {
+    color: #DDDDDD;
+    font-size: 2.5rem;
+}
+
+.page .container .title span {
+    color: #F05454;
+}
+
+.page .container .nav-btn a {
+    color: #DDDDDD;
+    font-size: 1.5rem;
+    font-weight: 200px;
+    text-transform: capitalize;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+.page .container .nav-btn a:hover, .page .container .nav-btn a.current {
+    color: #F05454;
+}
+
+.page .container .nav-btn a:active {
+    color: #EB8317;
+}
+
+.page .container .certificates-training {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8.5%;
+}
+
+.page .container .certificates-training .certificates-training-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 4%;
+}
+
+.page .container .certificates-training .certificates-training-box .photo {
+    width: 25%;
+    margin-right: 3%;
+}
+
+.page .container .certificates-training .certificates-training-box .photo img {
+    width: 100%;
+    border: 2px solid #F05454;
+    border-radius: 6%;
+}
+
+.page .container .certificates-training .certificates-training-box .photo img:hover {
+    border: 2px solid #DDDDDD;
+    box-shadow: 0px 0px 10px 5px #F05454;
+}
+
+.page .container .certificates-training .content {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.page .container .certificates-training .content .title {
+    color: #DDDDDD;
+    font-size: 16px;
+} 
+
+.page .container .certificates-training .content .description {
+    color: #DDDDDD;
+    font-size: 22px;
+    margin-top: 15px;
+} 
+
+@media (max-width: 600px) {
+    .page nav {
+        display: block;
+        height: 60px;
+    }
+
+    .page .container .title {
+        color: #DDDDDD;
+        font-size: 1.5rem;
+        margin-top: 20px;
+        margin-left: 3px;
+    }
+    
+    .page .container .nav-btn {
+        margin-top: 15px;
+    }
+
+    .page .container .nav-btn a {
+        color: #DDDDDD;
+        font-size: 20px;
+        font-weight: 200px;
+        text-transform: capitalize;
+        margin-left: 3px;
+        margin-right: 10px;
+    }
+
+    .page .container .certificates-training {
+        margin-top: 15%;
+    }
+
+    .page .container .certificates-training .certificates-training-box {
+        display: block;
+        margin-bottom: 8%;
+    }
+
+    .page .container .certificates-training .certificates-training-box .photo {
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    .page .container .certificates-training .content {
+        width: 100%;
+    }
+
+    .page .container .certificates-training .content .title {
+        color: #DDDDDD;
+        font-size: 14px;
+        text-align: center;
+        margin-left: 0px;
+    } 
+    
+    .page .container .certificates-training .content .description {
+        color: #DDDDDD;
+        font-size: 16.5px;
+        margin-top: 15px;
+        padding: 0px 10px 0px 10px;
+        text-align: justify;
+    } 
+}

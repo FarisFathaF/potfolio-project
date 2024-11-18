@@ -37,7 +37,7 @@ body {
     font-weight: 200px;
     text-transform: capitalize;
     margin-left: 40px;
-    margin-right: 60px;
+    margin-right: 50px;
 }
 
 .page .container .nav-btn a:hover, .page .container .nav-btn a.current {
