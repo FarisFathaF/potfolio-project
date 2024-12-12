@@ -289,10 +289,10 @@ body {
     }
 }
 
-@media (max-width: 350px){
+@media (max-width: 320px){
     .page .container .title {
         color: #DDDDDD;
-        font-size: 1.29rem;
+        font-size: 1.16rem;
         margin-top: 0px;
         margin-left: 3px;
         width: 100%;
