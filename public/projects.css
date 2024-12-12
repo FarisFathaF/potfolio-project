@@ -267,7 +267,15 @@ body {
     }
 }
 
-
+@media (max-width: 350px){
+    .page .container .title {
+        color: #DDDDDD;
+        font-size: 1.29rem;
+        margin-top: 0px;
+        margin-left: 3px;
+        width: 100%;
+    }
+}
 /*--------PLACEHOLDER--------*/
 /* .page .container .nav-box {
     background-color: #222831;

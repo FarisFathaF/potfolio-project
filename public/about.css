@@ -365,7 +365,15 @@ body {
     }
 }
 
-@media (max-width: 405px) {
+@media (max-width: 350px) {
+    .page .container .title {
+        color: #DDDDDD;
+        font-size: 1.29rem;
+        margin-top: 0px;
+        margin-left: 3px;
+        width: 100%;
+    }
+    
     .page .hobbies .hobbies-box img {
         width: 170px;
         border-radius: 30%;
