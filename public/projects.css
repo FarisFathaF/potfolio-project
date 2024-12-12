@@ -267,7 +267,7 @@ body {
     }
 }
 
-@media (max-width: 320px){
+@media (max-width: 323px){
     .page .container .title {
         color: #DDDDDD;
         font-size: 1.16rem;
