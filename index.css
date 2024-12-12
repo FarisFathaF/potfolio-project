@@ -77,7 +77,7 @@ body {
 }
 
 .page .container .sidebar li:first-child {     /*--shift the top button--*/
-    margin-top: 10px;
+    margin-top: 15x;
 }
 
 .page .container .sidebar li:last-child a {     /*--shift the X button--*/
@@ -216,7 +216,7 @@ body {
 
     .page .container .title {
         color: #DDDDDD;
-        font-size: 1.33rem;
+        font-size: 1.32rem;
         margin-top: 0px;
         margin-left: 3px;
         width: 100%;
@@ -286,6 +286,16 @@ body {
         margin: 0%;
         border: 2px solid #DDDDDD;
         box-shadow: 0px 0px 20px #F05454;
+    }
+}
+
+@media (max-width: 350px){
+    .page .container .title {
+        color: #DDDDDD;
+        font-size: 1.29rem;
+        margin-top: 0px;
+        margin-left: 3px;
+        width: 100%;
     }
 }
 
