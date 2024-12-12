@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #222831;
 }
@@ -112,24 +116,6 @@ body {
     color: #F05454;
 }
 
-.page .contact { /*--Contact Div--*/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.page .contact .content { /*--Content box--*/
-    display: flex;
-    flex-direction: column;
-}
-
-.page .contact .title { /*--Title box--*/
-    color: #DDDDDD;
-    font-size: 30px;
-    width: 70%;
-    margin-top: 7%;
-}
-
 .page .container .certificates-training {
     display: flex;
     flex-direction: column;
@@ -169,6 +155,7 @@ body {
 .page .container .certificates-training .content .title {
     color: #DDDDDD;
     font-size: 16px;
+    width: 100%;
 } 
 
 .page .container .certificates-training .content .description {
@@ -176,6 +163,28 @@ body {
     font-size: 22px;
     margin-top: 15px;
 } 
+
+.back-to-top {
+    display: flex;
+    color: #DDDDDD;
+    justify-content: flex-end;
+    transition: 0.2s ease-out;
+}
+
+.back-to-top span {
+    padding: 20px;
+    color: #DDDDDD;
+    background-color: #F05454;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    transition: 0.2s ease-out;
+}
+
+.back-to-top span:hover {
+    color: #F05454;
+    background-color: #DDDDDD;
+    transform: translateY(-5px);
+}
 
 @media (max-width: 992px) {    /*--on laptop--*/
     .page nav {
