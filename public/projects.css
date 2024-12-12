@@ -64,15 +64,37 @@ body {
 .page .sidebar li {
     width: 100%;
     height: 50px;
-    margin: 25px 0px 0px 20px;
+    margin-top: 10px;
 }
 
-.page .sidebar li a {    /*--just to be safe--*/
-    width: 100%;
+.page .container .sidebar li a {     /*--just to be safe--*/
+    padding-right: 100%;
+    border-radius: 0px;
+    background-color: rgb(221,221,221,0);
+    background-clip: padding-box;
 }
 
-.page .container nav li a:hover, .page .container nav li a.current {
+.page .container .sidebar li:first-child {     /*--shift the top button--*/
+    margin-top: 15x;
+}
+
+.page .container .sidebar li:last-child a {     /*--shift the X button--*/
+    padding: 0px 0px 0px 15px;
+}
+
+.page .container .normal li a:hover, .page .container .normal li a.current {
     color: #F05454;
+    background: rgb(221,221,221,0.1);
+}
+
+.page .container .sidebar li a:hover, .page .container .sidebar li a.current {
+    color: #F05454;
+    background-color: rgb(221,221,221,0.3);
+}
+
+.page .container .sidebar li a:hover {
+    color: #F05454;
+    background-color: rgb(221,221,221,0);
 }
 
 .page .container nav li a:active {
@@ -159,14 +181,11 @@ body {
     .page nav {
         margin-bottom: 60px;
     }
-    
-    .page .container .normal {
-        gap: 25px;
-    } 
 
     .page .container ul li a {
         font-size: 1.5rem;
         text-align: center;
+        padding: 15px 20px;
     }
 }
 
