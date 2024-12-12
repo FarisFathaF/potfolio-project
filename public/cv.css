@@ -1,0 +1,387 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #222831;
+}
+
+.page .container {
+    /*width: 95%;*/
+    /*margin: auto;*/ 
+    height: 100vh;
+    margin: 0% 2.5% 0% 2.5%;
+}
+
+.page nav {
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+
+.page .container .normal {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    list-style-type: none;  /*--agar list section lain tidak terdampak--*/
+}
+
+.page .container ul li a {
+    color: #DDDDDD;
+    font-size: 1.5rem;
+    font-weight: 200px;
+    text-transform: capitalize;
+    padding: 15px 35px;
+    border-radius: 10px;
+    background: #222831;
+}
+
+.page .container ul .hamburger-menu {   /*--hide this hamburger-menu button on anything >= desktop screen size*/
+    display: none;
+    /*transition: 0.2s; /*--apply transition when this class changes value on mobile, aka display from none to block*/
+}
+
+.page .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 300px;
+    background-color: rgb(221,221,221,0.1);
+    box-shadow: 0px 0px 10px #F05454;
+    display: none;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    list-style-type: none;  /*--agar list section lain tidak terdampak--*/
+}
+
+.page .sidebar li {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.page .container .sidebar li a {     /*--just to be safe--*/
+    padding-right: 100%;
+    border-radius: 0px;
+    background-color: rgb(221,221,221,0);
+    background-clip: padding-box;
+}
+
+.page .container .sidebar li:first-child {     /*--shift the top button--*/
+    margin-top: 15x;
+}
+
+.page .container .sidebar li:last-child a {     /*--shift the X button--*/
+    padding: 0px 0px 0px 15px;
+}
+
+.page .container .normal li a:hover, .page .container .normal li a.current {
+    color: #F05454;
+    background: rgb(221,221,221,0.1);
+}
+
+.page .container .sidebar li a:hover, .page .container .sidebar li a.current {
+    color: #F05454;
+    background-color: rgb(221,221,221,0.3);
+}
+
+.page .container .sidebar li a:hover {
+    color: #F05454;
+    background-color: rgb(221,221,221,0);
+}
+
+.page .container nav li a:active {
+    color: #EB8317;
+}
+
+.page .container .title {
+    color: #DDDDDD;
+    font-size: 2.5rem;
+    width: 30%;
+}
+
+.page .container .title span {
+    color: #F05454;
+}
+
+/*===========================================*/
+
+.page .container .paper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page .container .paper-bg {
+    width: 60%;
+    background-color: #DDDDDD;
+    margin: 20px 150px 20px 150px;
+    /*height: 100vh;*/
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*---------Introduction section---------*/
+.page .container .paper-bg .intro {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+}
+
+.page .container .paper-bg .intro .intro-photo {
+    width: 25%;
+}
+
+.page .container .paper-bg .intro .intro-photo img {
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+    border-radius: 20px;
+}
+
+.page .container .paper-bg .intro .intro-info {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px 0px 5px;
+}
+
+.page .container .paper-bg .intro .intro-info-2 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.page .container .paper-bg .intro .intro-info-3 {
+    margin-bottom: 5px;
+}
+
+.page .container .paper-bg .intro .intro-info-4 {
+    text-align: justify;
+}
+
+/*---------Work Experience Section---------*/
+.hr-solid {
+    border: 0.5px solid #222831;
+    margin: 0px 10px 0px 10px;
+}
+
+.page .container .paper-bg .work-experience .we-title {
+    padding-left: 10px;
+}
+
+.page .container .paper-bg .we-where-when-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.page .container .paper-bg .we-where-when-box .we-where {
+    width: 50%;
+}
+
+.page .container .paper-bg .we-where-when-box .we-where {
+    padding-left: 10px;
+}
+
+.page .container .paper-bg .we-where-when-box .we-when {
+    width: 50%;
+}
+
+.page .container .paper-bg .we-where-when-box .we-when h3 {
+    padding-left: 60%;
+}
+
+.page .container .paper-bg .work-experience .we-desc {
+    padding-left: 30px;
+    list-style-type: circle;
+}
+
+/*---------General styling---------*/
+.page .container .paper-bg span {
+    color: #616161;
+}
+
+.page .container .paper-bg .h3-styling {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.page .container .paper-bg h4 {
+    font-size: 1.1rem;
+    
+}
+
+.section {
+    margin-top: 15px;
+}
+
+.page .container .paper-bg .pad {
+    padding: 10px;
+}
+
+.page .container .paper-bg p, .page .container .paper-bg li {
+    font-size: 1.25rem;
+
+}
+
+.page .container .paper-bg a {
+    color: #0000FF;
+}
+
+.page .container .paper-bg a:hover {
+    color: #F05454;
+}
+
+.page .container .paper-bg .li-space {
+    margin-top: 10px;
+}
+
+
+/*---------Education Section---------*/
+.page .container .paper-bg .education {
+    display: flex;
+    flex-direction: column;
+}
+
+.page .container .paper-bg .education .edu-title {
+    padding-left: 10px;
+}
+
+.page .container .paper-bg .edu-where-when-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.page .container .paper-bg .edu-where-when-box .edu-where {
+    width: 50%;
+}
+
+.page .container .paper-bg .edu-where-when-box .edu-where {
+    padding-left: 10px;
+}
+
+
+.page .container .paper-bg .edu-where-when-box .edu-when {
+    width: 50%;
+}
+
+.page .container .paper-bg .edu-where-when-box .edu-when h3 {
+    padding-left: 58%;
+}
+
+/*---------Cource & Certification Section---------*/
+.page .container .paper-bg .course-certif {
+    display: flex;
+    flex-direction: column;
+}
+
+.page .container .paper-bg .course-certif .course-title {
+    padding-left: 10px;
+}
+
+.page .container .paper-bg .course-what-when-box  {
+    display: flex;
+    flex-direction: row;
+}
+
+.page .container .paper-bg .course-what-when-box .course-what {
+    width: 60%;
+}
+
+.page .container .paper-bg .course-what-when-box .course-what {
+    padding-left: 10px;
+}
+
+.page .container .paper-bg .course-what-when-box .course-when {
+    width: 40%;
+}
+
+.page .container .paper-bg .course-what-when-box .course-when h3 {
+    padding-left: 70%;
+}
+
+/*---------Personal Projects Section---------*/
+.page .container .paper-bg .personal-project {
+    display: flex;
+    flex-direction: column;
+}
+
+.page .container .paper-bg .personal-project .personal-proj-title {
+    padding-left: 10px;
+}
+
+.page .container .paper-bg .proj-what-when-box  {
+    display: flex;
+    flex-direction: row;
+}
+
+.page .container .paper-bg .proj-what-when-box .proj-what {
+    width: 50%;
+}
+
+.page .container .paper-bg .proj-what-when-box .proj-what {
+    padding-left: 10px;
+}
+
+.page .container .paper-bg .proj-what-when-box .proj-when {
+    width: 50%;
+}
+
+.page .container .paper-bg .proj-what-when-box .proj-when h3 {
+    padding-left: 67%;
+}
+
+.page .container .paper-bg .personal-project .proj-desc {
+    padding-left: 30px;
+    list-style-type: circle;
+}
+
+/*---------Skills, Achievements & Other Experience Section---------*/
+.page .container .paper-bg .skills-achv .skills-achv-title {
+    padding-left: 10px;
+}
+
+.page .container .paper-bg .skills-achv .ul-pad {
+    padding-left: 20px;
+}
+
+.page .container .paper-bg .skills-achv .other-achv-ul-pad {
+    padding-left: 15px;
+}
+
+.page .container .paper-bg .skills-achv .other-achv li {
+    list-style-type: none;
+}
+
+/*---------Back to top button styling---------*/
+.back-to-top {
+    display: flex;
+    color: #DDDDDD;
+    justify-content: flex-end;
+    transition: 0.2s ease-out;
+}
+
+.back-to-top span {
+    padding: 20px;
+    color: #DDDDDD;
+    background-color: #F05454;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    transition: 0.2s ease-out;
+}
+
+.back-to-top span:hover {
+    color: #F05454;
+    background-color: #DDDDDD;
+    transform: translateY(-5px);
+}
