@@ -31,7 +31,10 @@ body {
     display: flex;
     justify-content: flex-end;
     width: 70%;
-    list-style-type: none;  /*--agar list section lain tidak terdampak--*/
+}
+
+.page .container ul li {
+    list-style-type: none;
 }
 
 .page .container ul li a {
@@ -61,7 +64,6 @@ body {
     display: none;
     flex-direction: column;
     backdrop-filter: blur(10px);
-    list-style-type: none;  /*--agar list section lain tidak terdampak--*/
 }
 
 .page .sidebar li {
@@ -398,3 +400,51 @@ body {
 }
 
 /*=====================MEDIA QUERY=====================*/
+@media (max-width: 992px) {    /*--on laptop--*/
+    .page nav {
+        margin-bottom: 60px;
+    }
+
+    .page .container ul li a {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 768px) {    /*--on mobile and ipad--*/
+    .hideOn768px {
+        display: none;
+    }
+    
+    .page .container .title {
+        color: #DDDDDD;
+        font-size: 2.5rem;
+        margin-top: 0px;
+        margin-left: 3px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 405px) {
+    .page nav {
+        height: 100px;
+        margin-bottom: 0px;
+    }
+
+    .page .container .title {
+        color: #DDDDDD;
+        font-size: 1.33rem;
+        margin-top: 0px;
+        margin-left: 3px;
+        width: 100%;
+    }
+
+    .page .container ul .hamburger-menu {   /*--hide this hamburger-menu button on anything >= desktop screen size*/
+        display: block;
+    }
+
+    .page .sidebar {
+        width: 100%;
+    }
+}
