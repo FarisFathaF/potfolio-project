@@ -33,9 +33,9 @@ body {
     width: 70%;
 }
 
-.page .container ul li {
+/*.page .container ul li {
     list-style-type: none;
-}
+} */
 
 .page .container ul li a {
     color: #DDDDDD;
@@ -220,7 +220,6 @@ body {
 
 .page .container .paper-bg h4 {
     font-size: 1.1rem;
-    
 }
 
 .section {
@@ -233,7 +232,6 @@ body {
 
 .page .container .paper-bg p, .page .container .paper-bg li {
     font-size: 1.25rem;
-
 }
 
 .page .container .paper-bg a {
@@ -446,5 +444,129 @@ body {
 
     .page .sidebar {
         width: 100%;
+    }
+
+    
+    .page .container .paper-bg {
+        width: 100%;
+        background-color: #DDDDDD;
+        margin: 20px 150px 20px 150px;
+        /* height: 100vh; */
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    /*------------------INTRO SECTION--------------------*/
+    .page .container .paper-bg .intro{
+        display: block;
+        flex-direction: row;
+        font-size: 1rem;
+    }
+
+    .page .container .paper-bg .intro .intro-photo {
+        width: 60%;
+    }
+
+    .page .container .paper-bg .intro .intro-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 15px 0px 5px;
+    }
+
+    .page .container .paper-bg .intro .intro-info-2 {
+        display: block;
+        flex-direction: row;
+        margin-bottom: 5px;
+    }
+
+    .page .container .paper-bg .intro .intro-info-3 {
+        margin-bottom: 5px;
+    }
+
+    /*------------------WORK EXPERIENCE (WE) SECTION--------------------*/
+    .page .container .paper-bg .we-where-when-box {
+        flex-direction: column;
+    }
+
+    .page .container .paper-bg .we-where-when-box .we-where {
+        width: 100%;
+    }
+
+    .page .container .paper-bg .we-where-when-box .we-when {
+        width: 100%;
+    }
+
+    .page .container .paper-bg .we-where-when-box .we-when h3 {
+        padding-left: 0%;
+    }
+
+    .page .container .paper-bg .work-experience .we-desc {
+        padding-left: 20px;
+    }
+
+    /*------------------EDUCATION (EDU) SECTION--------------------*/
+    .page .container .paper-bg .edu-where-when-box {
+        flex-direction: column;
+    }
+
+    .page .container .paper-bg .edu-where-when-box .edu-where {
+        width: 100%;
+    }
+
+    .page .container .paper-bg .edu-where-when-box .edu-when {
+        width: 100%;
+    }
+
+    .page .container .paper-bg .edu-where-when-box .edu-when h3 {
+        padding-left: 2%;
+    }
+
+    /*------------------COURSE SECTION--------------------*/
+    .page .container .paper-bg .course-what-when-box {
+        flex-direction: column;
+    }
+
+    .page .container .paper-bg .course-what-when-box .course-what {
+        width: 100%;
+    }
+
+    .page .container .paper-bg .course-what-when-box .course-when {
+        width: 100%;
+    }
+
+    .page .container .paper-bg .course-what-when-box .course-when h3 {
+        padding-left: 2%;
+    }
+
+    /*------------------PROJECT (PROJ) SECTION--------------------*/
+    .page .container .paper-bg .proj-what-when-box {
+        flex-direction: column;
+    }
+
+    .page .container .paper-bg .proj-what-when-box .proj-what {
+        width: 100%;
+    }
+
+    .page .container .paper-bg .proj-what-when-box .proj-when {
+        width: 100%;
+    }
+
+    .page .container .paper-bg .proj-what-when-box .proj-when h3 {
+        padding-left: 4%;
+    }
+
+    /*------------------GENERAL STYLING--------------------*/
+    .page .container .paper-bg .h3-styling {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .page .container .paper-bg p, .page .container .paper-bg li {
+        font-size: 1rem;
+    }
+
+    .page .container .paper-bg .li-space {
+        margin-top: 5px; 
     }
 }
