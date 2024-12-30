@@ -11,7 +11,7 @@ body {
 }
 
 .page {
-    height: 100vh;  /*--so that the footer works, somehow--*/
+    height: 100vh;  /*--so that the footer works, somehow..--*/
 }
 
 .page .container {
