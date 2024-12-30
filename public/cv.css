@@ -33,9 +33,13 @@ body {
     width: 70%;
 }
 
-/*.page .container ul li {
-    list-style-type: none;
-} */
+.page .container nav .normal li {
+    list-style-type: none; /*--remove the dots in the navbar, a lil bit different from the other page's css because this page has a lot of other lists--*/
+} 
+
+.page .container nav .sidebar li {
+    list-style-type: none;  /*--remove the dots in the navbar, a lil bit different from the other page's css because this page has a lot of other lists--*/
+} 
 
 .page .container ul li a {
     color: #DDDDDD;
