@@ -8,12 +8,12 @@
 
 body {
     background-color: #222831;
+    height: 100vh;
 }
 
 .page .container {
     /*width: 95%;*/
     /*margin: auto;*/ 
-    height: 100vh;
     margin: 0% 2.5% 0% 2.5%;
 }
 
@@ -177,7 +177,7 @@ body {
 .page .hobbies {
     display: flex;
     flex-direction: column;
-    margin-top: 7%;
+    margin-top: 5%;
     margin-bottom: 60px;
 }
 
@@ -190,6 +190,7 @@ body {
     width: 25%;
     background-color: rgb(240,84,84,0.8);
     margin-right: 2px;
+    user-select: none; /*--So that this part is not selectable by user--*/
 }
 
 .part:hover {
@@ -200,12 +201,15 @@ body {
 
 .page .hobbies .hobbies-box .title-2 {
     height: 200px;
+    outline: 2px solid rgb(48,71,94);
     background-color: rgb(48,71,94,0.5);
-    border-radius: 5% 0% 0% 5%;
+    border-radius: 15px 0px 0px 15px;
 }
 
 .page .hobbies .hobbies-box .title-2:hover {
+    outline: 1px solid #DDDDDD;
     background-color: rgb(48,71,94);
+    box-shadow: none; /*--remove the glowing red effect from the .part class--*/
 }
 
 .page .hobbies .hobbies-box .title-2 h2 {
@@ -251,10 +255,83 @@ body {
 
 .right {
     float: right;
-    border-radius: 0% 5% 5% 0%;
+    border-radius: 0px 15px 15px 0px;
+}
+
+/*=====================SKILLS SECTION========================*/
+.page .skills-container {
+    margin-top: 5%;
 }
 
 
+.page .skills-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.page .skills-box .title-3 {
+    width: 25%;
+    outline: 2px solid rgb(48,71,94);
+    background-color: rgb(48,71,94,0.5);
+    align-content: center;
+    border-radius: 15px 0px 0px 15px;
+    user-select: none; /*--So that this part is not selectable by user--*/
+}
+
+.page .skills-box .title-3:hover {
+    outline: 1px solid #DDDDDD;
+    background-color: rgb(48,71,94);
+}
+
+.page .skills-box .title-3 h2 {
+    font-size: 50px;
+    color: #F05454;
+    padding-left: 170px;
+}
+
+.page .skills-box .skills {
+    width: 70%;
+    outline: 1px solid #DDDDDD;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.page .skills-box .skills .skills-list {
+    display: flex;
+    font-size: 25px;
+    flex-wrap: wrap;
+}
+
+.page .skills-box .skills .skills-list li {
+    color: #DDDDDD;
+    background-color: #F05454;
+    border-radius: 5px;
+    margin: 10px 10px 0px 20px;
+    padding: 0px 15px 0px 15px;
+    user-select: none; /*--So that this part is not selectable by user--*/
+}
+
+.page .skills-box .skills .skills-list li:hover {
+    border: 1px solid #DDDDDD;
+    box-shadow: 0px 0px 10px #F05454;
+    transition: none; /*---bcs the universal transition setting for the others is 0.3s---*/
+}
+
+.page .skills-box .skills .skills-list .bottom-li {
+    margin-bottom: 15px;
+}
+
+/*=====================FOOTER======================*/
+.footer {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+}
+
+.footer footer {
+    color: #DDDDDD;
+}
+
+/*=====================MEDIA QUERY=====================*/
 @media (max-width: 992px) {    /*--on laptop--*/
     .page nav {
         margin-bottom: 60px;
@@ -324,6 +401,51 @@ body {
         margin-top: 10px;
     }
 
+    /*=====================SKILLS SECTION========================*/
+    .page .skills-box {
+        display: block;
+
+    }
+    .page .skills-box .title-3 {
+        width: 100%;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .page .skills-box .title-3 h2 {
+        font-size: 30px;
+        padding-left: 145px;
+    }
+    
+    .page .skills-box .skills {
+        width: 100%;
+        outline: 1px solid #DDDDDD;
+        border-radius: 0px 0px 15px 15px;
+    }
+    
+    .page .skills-box .skills .skills-list {
+        display: flex;
+        font-size: 18px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .page .skills-box .skills .skills-list li {
+        width: 65%;
+        text-align: center;
+    }
+
+    .page .skills-box .skills .skills-list .bottom-li {
+        margin-bottom: 0px;
+    }
+
+    .page .skills-box .skills .skills-list li:last-child {
+        margin-bottom: 10px; /*---margin bottom for the last element of the skills list---*/
+    }
+
+    /*=====================HOBBIES SECTION========================*/
+    .page .hobbies {
+        margin-top: 10%;
+    }
     .page .hobbies .hobbies-box {
         display: flex;
         flex-direction: column;
@@ -336,7 +458,7 @@ body {
 
     .page .hobbies .hobbies-box .title-2 {
         height: 50px;
-        border-radius: 15% 15% 0% 0%;
+        border-radius: 15px 15px 0px 0px;
     }
     
     .page .hobbies .hobbies-box .title-2 h2 {

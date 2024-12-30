@@ -12,12 +12,12 @@ html {
 
 body {
     background-color: #222831;
+    height: 100vh;
 }
 
 .page .container {
     /*width: 95%;*/
     /*margin: auto;*/ 
-    height: 100vh;
     margin: 0% 2.5% 0% 2.5%;
 }
 
@@ -385,3 +385,16 @@ body {
     background-color: #DDDDDD;
     transform: translateY(-5px);
 }
+
+/*=====================FOOTER======================*/
+.footer {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+}
+
+.footer footer {
+    color: #DDDDDD;
+}
+
+/*=====================MEDIA QUERY=====================*/

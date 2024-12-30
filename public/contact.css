@@ -185,6 +185,18 @@ body {
     color: #F05454;
 }
 
+/*=====================FOOTER======================*/
+.footer {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+}
+
+.footer footer {
+    color: #DDDDDD;
+}
+
+/*=====================MEDIA QUERY=====================*/
 @media (max-width: 992px) {    /*--on laptop--*/
     .page nav {
         margin-bottom: 60px;
