@@ -211,7 +211,8 @@ body {
 }
 
 #components .components-container .components-detail img:hover {
-    border: 3px solid #FFEB00;
+    /* border: 3px solid #FFEB00; */
+    box-shadow: 0px 0px 5px 5px #FFEB00;
 }
 
 #components .components-container .components-detail h3 {
