@@ -18,6 +18,10 @@ body {
     /* margin: 0% 5% 0% 5%; */
 }
 
+#header-home-background {
+    background-image: url("/assets/images/Projects/blue-wood-pattern-1.jpg");
+}
+
 /*========================NAVBAR SECTION===============================*/
 #header nav {
     display: flex;
@@ -66,21 +70,31 @@ body {
 }
 
 #header .header-container ul li a:hover {
-    color: #FFEB00;
-    background-color: rgb(52, 76, 183, 0.3);
+    /* color: #FFEB00;
+    background-color: rgb(52, 76, 183, 0.8); */
+    color: #344CB7;
+    background-color: rgb(255, 235, 0, 0.8);
 }
 
 /*========================HOME SECTION===============================*/
+/* .gradient-background {
+    background: linear-gradient(300deg, #FFEB00,  #344CB7);
+    background-size: 260% 100%;
+    animation: gradient-animation 0.2s ease infinite;
+} */
+
 #home .home-container {
     display: flex;
-    margin-top: 2%;
-    background-color: rgb(52, 76, 183, 0.4);
+    height: 600px;
+    /* margin-top: 2%; */
+    /* background-color: rgb(52, 76, 183, 0.4); */
     /* border-radius: 25px 0px 0px 25px; */
 }
 
 #home .home-container .home-text {
-    width: 55%;
+    width: 55%; /*it used to be 55% if i were to insert a picture of my Prorotype instead*/
     /* background-color: rgb(52, 76, 183, 0.4); */
+    /* background-image: url("/assets/images/Projects/blue-wood-pattern-1.jpg"); */
 }
 
 #home .home-container .home-text h2 {
@@ -98,21 +112,21 @@ body {
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
-    padding: 50px 0px 50px 225px; /*it used to be 20px 0px 20px 55px*/
+    padding: 50px 50px 0px 190px; /*it used to be 20px 0px 20px 55px*/
     text-align: left;
 }
 
 #home .home-container .home-img {
-    width: 45%;
+    width: 45%; /*it used to be 45% if i were to insert a picture of my Prorotype instead*/
+    align-content: center;
+}
+
+#home .home-container .home-img img {
+    width: 95%;
+    border-radius: 35px;
 }
 
 /*========================DESIGN SECTION===============================*/
-.gradient-background {
-    background: linear-gradient(300deg, #FFEB00, #344CB7);
-    background-size: 200% 200%;
-    animation: gradient-animation 10s ease infinite;
-}
-
 #design .design-container {
     /* margin-top: 40px; */
     margin: 40px 5% 0% 5%;
