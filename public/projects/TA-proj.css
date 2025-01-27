@@ -338,8 +338,9 @@ body {
 }
 
 #result .result-container .result-box .result-card:hover {
-    box-shadow: 7px 5px 0px #000957;
-    border: 1px solid #FFEB00;
+    box-shadow: 0px 10px 15px 10px #FFEB00;
+    /* box-shadow: 7px 5px 0px #000957; */
+    /* border: 1px solid #FFEB00; */
 }
 
 #result .result-container .result-box .result-card img {
