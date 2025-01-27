@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Integrated Smart Air Freshener - Proyek Tugas Akhir</title>
+    <link rel="stylesheet" href="./TA-proj.css">
+    <!--Link for fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!--font for the material icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <section id="header">
+            <div class="header-container">
+                <nav>
+                    <h1 class="logo"><span>SMART</span> Air Freshener</h1> <!--class logo utk span-->
+                    <ul class="normal">
+                        <li><a>Home</a></li>
+                        <li><a>Design</a></li>
+                        <li><a>Features</a></li>
+                        <li><a>Result</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    
+        <section id="home">
+            <div class="home-container gradient-background">
+                <div class="home-text">
+                    <h2>SMART AFRESH IO</h2>
+                    <p>Pada masa kini, masyarakat lebih memilih untuk menggunakan pengharum ruangan otomatis karena alat dapat menyemprot cairan pengharum ruangan secara otomatis dalam kurun waktu tertentu. Akan tetapi alat pengharum ruangan otomatis ini masih memiliki beberapa kekurangan seperti masalah yang paling utama adalah kesulitan pengguna dalam melakukan pengecekan baterai dan jumlah cairan pengharum pada alat tersebut karena posisi penepatannya yang biasanya diletakkan di tempat tinggi, sehingga tidak dapat dilakukan pengecekan setiap saat. Maka dari itu dibuatlah produk SMART AFRESH IO, dispenser pengharum ruangan terintegrasi IoT.</p>
+                </div>
+                <div class="home-img">
+
+                </div>
+
+            </div>
+        </section>
+    
+        <section id="design">
+            <div class="design-container">
+                <h2>Design</h2>
+                <p>Wiring diagram sistem terdiri dari berbagai macam komponen elektronik yang terhubung ke otak dari sistem ini yaitu mikroprosesor ESP32. Desain 3D yang dibuat dan dicetak merupakan modifikasi dari casing stella otomatis pabrik yang telah disesuaikan dengan ukuran komponen-komponen pada alat.</p>
+                <div class="design-images">
+                    <div class="left">
+                        <img src="../assets/images/Projects/3D Design SMART AFRESH IO [combined].png">
+                    </div>
+                    <div class="right">
+                        <img src="../assets/images/Projects/Wiring Diagram SMART AFRESH IO.png">
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+
+        <section id="components">
+            <div class="components-container">
+                <h2>Component list</h2>
+                <div class="components-top">
+                    <div class="components-detail">
+                        <img src="../assets/images/Projects/TA-proj-esp32.png">
+                        <h3>ESP32</h3>
+                        <p>Bagian utama dari sistem untuk kendali dan interkoneksi modul-modul dan komponen-komponen yang digunakan dengan WiFi.</p>
+                    </div>
+                    <div class="components-detail">
+                        <img src="../assets/images/Projects/TA-proj-battery.png">
+                        <h3>Baterai Li-Ion 3S</h3>
+                        <p>Baterai rechargable Li-ion cell dengan tegangan kerja 3,7 V dan kapasitas 1500 mAh.</p>
+                    </div>
+                    <div class="components-detail">
+                        <img src="../assets/images/Projects/TA-proj-bms.png">
+                        <h3>BMS 3S 10A</h3>
+                        <p>Modul ini merupakan Battery Management System (BMS) untuk baterai yang dirangkai seri 3, ia berfungsi untuk melindungi baterai dari short circuit, overcharge tegangan dan overdischarge tegangan.</p>
+                    </div>
+                    <div class="components-detail">
+                        <img src="../assets/images/Projects/TA-proj-stepDown.png">
+                        <h3>Step Down 5V MP1584</h3>
+                        <p>Digunakan untuk menurunkan tegangan dari 3 buah baterai Li-ion yang digunakan
+                            pada alat agar dapat men-supply daya ESP32 sesuai dengan tegangan yang dibutuhkan mikrokontroler tersebut.</p>
+                    </div>
+                </div>
+                <div class="components-bottom">
+                    <div class="components-detail">
+                        <img src="../assets/images/Projects/TA-proj-loadCell.png">
+                        <h3>Load Cell HX711</h3>
+                        <p>Untuk menimbang berat dari kaleng cairan pengharum ruangan dan hasilnya dikonversi menjadi besaran tertentu (seperti persentase) agar pengguna dapat mengetahui jumlah cairan pengharum ruangan yang tersisa secara real time.</p>
+                    </div>
+                    <div class="components-detail">
+                        <img src="../assets/images/Projects/TA-proj-motorDC.png">
+                        <h3>Motor DC</h3>
+                        <p>Digunakan untuk mekanisme penyemprotan, dimana ketika sudah waktunya untuk menyemprot maka motor DC akan aktif dan menekan katup semprotan kaleng untuk menyemprot pengharum ruangan.</p>
+                    </div>
+                    <div class="components-detail">
+                        <img src="../assets/images/Projects/TA-proj-relay5V.png">
+                        <h3>Relay 5V Single Channel</h3>
+                        <p>Komponen ini digunakan untuk mengaktifkan motor DC pada
+                            mekanisme penyemprotan sesuai dengan interval waktu penyemprotan yang telah dipilih oleh user pada aplikasi Blynk.</p>
+                    </div>
+                    <div class="components-detail">
+                        <img src="../assets/images/Projects/TA-proj-ledRGB.png">
+                        <h3>Modul RGB LED</h3>
+                        <p>Digunakan sebagai indikator visual dari persentase baterai dan berat kaleng cairan pengharum ruangan pada alat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="features-container">
+                <h2>Features</h2>
+                <div class="features-box">
+                    <div class="features-left">
+                        <div class="features-detail">
+                            <img src="../assets/images/Projects/proj-TA-icons-WiFi.png">
+                            <h3>Sistem terhubung dengan jaringan internet (WiFi)</h3>
+                        </div>
+                        <div class="features-detail">
+                            <img src="../assets/images/Projects/proj-TA-icons-battery.png">
+                            <h3>Monitoring persentase dan status baterai</h3>
+                        </div>
+                        <div class="features-detail">
+                            <img src="../assets/images/Projects/proj-TA-icons-canSpray.png">
+                            <h3>Monitoring cairan pengharum ruangan dengan load cell</h3>
+                        </div>
+                    </div>
+                    <div class="features-right">
+                        <div class="features-detail">
+                            <img src="../assets/images/Projects/proj-TA-icons-clock.png">
+                            <h3>Penjadwalan otomatis untuk mematikan/menyalakan mekanisme penyemprotan</h3>
+                        </div>
+                        <div class="features-detail">
+                            <img src="../assets/images/Projects/proj-TA-icons-timer.png">
+                            <h3>Pengaturan interval waktu penyemprotan</h3>
+                        </div>
+                        <div class="features-detail">
+                            <img src="../assets/images/Projects/proj-TA-icons-notifications.png">
+                            <h3>Notifikasi ketika baterai atau cairan pengharum ruangan sudah habis/kritis</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="result">
+            <div class="result-container">
+            <h2>Result</h2>
+                <div class="result-box">
+                        <div class="result-card">
+                            <img src="../assets/images/Projects/Result/TA-proj-cardImage-1_V2.png">
+                            <h3>Tampak luar</h3>
+                            <p>Alat diletakkan pada suatu pijakan yang digantung pada tembok. 2 Led RGB disamping kanan alat berfungsi sebagai indikator visual untuk status/kondisi dari baterai dan cairan pengharum ruangan dalam alat</p>
+                        </div>
+                        <div class="result-card">
+                            <img src="../assets/images/Projects/Result/TA-proj-cardImage-2_V2.png">
+                            <h3>Bagian utama alat</h3>
+                            <p>Bagian utama alat berisi kaleng cairan pengharum ruangan yang diletakkan pada sensor load cell HX711, lalu dapat diperhatikan pada bagian atas terdapat mekanisme penyemprotan dari kaleng cairan pengharum ruangan tersebut.</p>
+                        </div>
+                        <div class="result-card">
+                            <img src="../assets/images/Projects/Result/TA-proj-cardImage-3_V2.png">
+                            <h3>Box komponen alat</h3>
+                            <p>Bagian belakang alat yang merupakan box komponen alat terisi oleh komponen-komponen elektronik yang digunakan pada alat. Komponen-komponen tersebut disolder dan diletakkan pada PCB bolong yang tertancap ke bagian utama alat.</p>
+                        </div>
+                        <div class="result-card">
+                            <img src="../assets/images/Projects/Result/TA-proj-cardImage-4_V2.png" class="ui">
+                            <h3>Tampilan UI (mobile)</h3>
+                            <p>Ini merupakan tampilan UI yang akan dilihat dan digunakan oleh user. Pada UI ini user bisa mematikan dan menyalakan mekanisme penyemprotan alat, mengatur interval waktu penyemprotan alat, dan melakukan monitoring persentase serta status/kondisi dari baterai dan cairan pengharum ruangan yang digunakan dalam alat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div>
+            <!--Back to Top button-->
+                <a href="#" class="back-to-top">
+                    <span class="material-icons">
+                        arrow_upward
+                    </span>
+                </a>
+            </div>
+
+        <section id="footer">
+            <div class="footer-container">
+                <footer><p>© 2024 Faris FF | All Rights Reserved.</p></footer>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
