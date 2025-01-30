@@ -49,7 +49,6 @@ body {
 }
 
 #header .header-container .normal {
-    color: #F6F1F1;
     font-size: 1.5em;
     list-style: none;
     width: 70%;
@@ -65,15 +64,21 @@ body {
 }
 
 #header .header-container ul li a {
+    color: #F6F1F1;
     padding: 35px 35px;
     background-clip: padding-box;
+    transition: 0.2s ease-in;
 }
 
 #header .header-container ul li a:hover {
     /* color: #FFEB00;
     background-color: rgb(52, 76, 183, 0.8); */
-    color: #344CB7;
+    color: #000957;
     background-color: rgb(255, 235, 0, 0.8);
+}
+
+#header .header-container ul li a:visited {
+    text-decoration: none; /* to remove the underline on an anchor tag (the navbar buttons) */
 }
 
 /*========================HOME SECTION===============================*/
@@ -166,6 +171,12 @@ body {
 #design .design-container .design-images .left img {
     width: 80%;
     margin-left: 50px;
+    transition: 0.2s ease-in;
+}
+
+#design .design-container .design-images .left img:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-out;
 }
 
 #design .design-container .design-images .right {
@@ -178,6 +189,12 @@ body {
     width: 100%;
     border-radius: 25px;
     /* object-fit: cover; */
+    transition: 0.2s ease-in;
+}
+
+#design .design-container .design-images .right img:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-out;
 }
 
 /*========================COMPONENTS SECTION===============================*/
@@ -293,6 +310,12 @@ body {
 #features .features-container .features-detail {
     display: flex;
     flex-direction: row;
+    transition: 0.2s ease-in;
+}
+
+#features .features-container .features-detail:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-out;
 }
 
 #features .features-container .features-detail img {
@@ -304,7 +327,8 @@ body {
 
 #features .features-container .features-detail h3 {
     height: 150px; /*so that the bg color only apply to the h3 text, not the whole h3 block*/
-    background-color: #344CB7;
+    background-color: rgb(52, 76, 183, 1);
+    transition: 0.2s ease-in;
     margin-top: 20px;
     border-radius: 0px 40px 40px 0px;
     margin-right: 20px;
@@ -318,6 +342,11 @@ body {
     text-align: left;
     align-content: center;
     padding: 0px 15px 0px 15px;
+}
+
+#features .features-container .features-detail h3:hover {
+    background-color: rgb(16, 55, 230, 1);
+    transition: 0.2s ease-out;
 }
 
 /*========================RESULT SECTION===============================*/
