@@ -68,7 +68,7 @@ body {
     padding: 35px 35px;
     background-clip: padding-box;
     transition: 0.2s ease-in;
-    text-decoration: none; 
+    text-decoration: none;  /* to remove the underline on an anchor tag (the navbar buttons) */
 }
 
 #header .header-container ul li a:hover {
@@ -76,10 +76,6 @@ body {
     background-color: rgb(52, 76, 183, 0.8); */
     color: #000957;
     background-color: rgb(255, 235, 0, 0.8);
-}
-
-#header .header-container ul li a:visited {
-    text-decoration: none; /* to remove the underline on an anchor tag (the navbar buttons) */
 }
 
 /*========================HOME SECTION===============================*/
