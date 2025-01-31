@@ -18,7 +18,7 @@ body {
      margin: 0% 5% 0% 5%; 
 } */
 
-#header-home-background {
+.page #header-home-background {
     background-image: url("../assets/images/Projects/blue-wood-pattern-1.jpg");
 }
 
